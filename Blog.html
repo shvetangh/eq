@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyTok Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body, html {
+      margin: 0; padding: 0; height: 100%;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+    section {
+      scroll-snap-align: start;
+    }
+    video {
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <main class="flex flex-col">
+    <!-- Reel 1 -->
+    <section class="relative h-screen w-full">
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay muted loop playsinline class="absolute inset-0 w-full h-full"></video>
+      <div class="absolute bottom-24 left-4 px-2">
+        <h3 class="font-semibold">@userone</h3>
+        <p class="text-sm">Check out this awesome clip! #fun #viral</p>
+      </div>
+      <div class="absolute right-4 bottom-24 flex flex-col items-center space-y-4">
+        <button class="hover:scale-110 transition"><span class="text-xl">❤️</span><div class="text-xs">1.2K</div></button>
+        <button class="hover:scale-110 transition"><span class="text-xl">💬</span><div class="text-xs">230</div></button>
+        <button class="hover:scale-110 transition"><span class="text-xl">🔄</span><div class="text-xs">100</div></button>
+      </div>
+    </section>
+
+    <!-- Reel 2 -->
+    <section class="relative h-screen w-full">
+      <video src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" autoplay muted loop playsinline class="absolute inset-0 w-full h-full"></video>
+      <div class="absolute bottom-24 left-4 px-2">
+        <h3 class="font-semibold">@usertwo</h3>
+        <p class="text-sm">Another cool dance! #dance #trending</p>
+      </div>
+      <div class="absolute right-4 bottom-24 flex flex-col items-center space-y-4">
+        <button class="hover:scale-110 transition"><span class="text-xl">❤️</span><div class="text-xs">800</div></button>
+        <button class="hover:scale-110 transition"><span class="text-xl">💬</span><div class="text-xs">120</div></button>
+        <button class="hover:scale-110 transition"><span class="text-xl">🔄</span><div class="text-xs">90</div></button>
+      </div>
+    </section>
+
+    <!-- Reel 3 -->
+    <section class="relative h-screen w-full">
+      <video src="https://media.w3.org/2010/05/bunny/movie.mp4" autoplay muted loop playsinline class="absolute inset-0 w-full h-full"></video>
+      <div class="absolute bottom-24 left-4 px-2">
+        <h3 class="font-semibold">@userthree</h3>
+        <p class="text-sm">Cute bunny moment! #cute #animals</p>
+      </div>
+      <div class="absolute right-4 bottom-24 flex flex-col items-center space-y-4">
+        <button class="hover:scale-110 transition"><span class="text-xl">❤️</span><div class="text-xs">2.5K</div></button>
+        <button class="hover:scale-110 transition"><span class="text-xl">💬</span><div class="text-xs">400</div></button>
+        <button class="hover:scale-110 transition"><span class="text-xl">🔄</span><div class="text-xs">180</div></button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Nav -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-black bg-opacity-80 flex justify-around items-center py-2 border-t border-gray-800 text-xs">
+    <button class="flex flex-col items-center"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 20V14H14V20H19V12H21L10 3L-1 12H1V20H6V14H10V20Z"/></svg>Home</button>
+    <button class="flex flex-col items-center"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8"/></svg>Discover</button>
+    <button class="flex flex-col items-center bg-white text-black px-3 py-1 rounded">+</button>
+    <button class="flex flex-col items-center"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5h16v10H2V5zm0-2a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V5a2 2 0 00-2-2H2z"/></svg>Inbox</button>
+    <button class="flex flex-col items-center"><svg class="w-6 h-6 rounded-full" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>Me</button>
+  </nav>
+
+</body>
+</html>
